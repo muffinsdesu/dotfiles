@@ -1,0 +1,71 @@
+env:
+    TERM: alacritty
+
+window:
+    decorations: full
+    opacity: 0.8
+    title: Alacritty
+    decorations_theme_variant: None
+
+scrolling:
+    history: 1000
+    multiplier: 1
+
+font:
+    normal:
+        family: MesloLGS NF
+        stype: Medium
+    size: 10
+    offset:
+        x: -1
+        y: -1
+    glyph_offset:
+        x: 0
+        y: 0
+    builtin_box_drawing: true
+
+colors:
+    primary:
+        background: '#232627'
+        foreground: '#fcfcfc'
+    cursor:
+        text: CellBackground
+        cursor: '#d6d6d6'
+    search:
+        matches:
+            foreground: CellForeground
+            background: CellBackground
+    normal:
+        black:  '#313539'
+        red:     '#ed1515'
+        green:   '#11d116'
+        yellow:  '#f6ee00'
+        blue:    '#1d99f3'
+        magenta: '#b76ad8'
+        cyan:    '#13ecec'
+        white:   '#fcfcfc'
+    bright:
+        black:  '#676f78'
+        red:     '#c0392b'
+        green:   '#1cdc9a'
+        yellow:  '#fdbc4b'
+        blue:    '#3daee9'
+        magenta: '#8e44ad'
+        cyan:    '#0a94a0'
+        white:   '#ffffff'
+    transparent_background_colors: false
+
+selection:
+    semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+cursor:
+    style:
+        shape: Beam
+        # Values for `shape`:
+        #   - ▇ Block
+        #   - _ Underline
+        #   - | Beam
+
+live_config_reload: true
+shell:
+    program: /bin/zsh
