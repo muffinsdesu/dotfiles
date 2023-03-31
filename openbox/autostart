@@ -1,0 +1,9 @@
+# bars
+tint2 &
+polybar &
+
+# wallpaper
+nitrogen &
+
+# change keyboard layout 
+setxkbmap us workman
