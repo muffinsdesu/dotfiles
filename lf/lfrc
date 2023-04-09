@@ -1,0 +1,80 @@
+# icons drawbox and hidden files
+set icons
+set hidden
+set drawbox
+
+# Remove default keybindings
+map y
+map d
+map p
+map F
+map ;
+map ,
+map m
+map n
+map N
+
+# Basic Functions
+map <delete> delete
+map f broot_jump
+map x cut
+map c copy
+map v paste
+map <esc> clear
+map <enter> open
+map gt top
+map gb bottom
+map gm middle
+map <c-r> reload
+#   q  quit
+
+
+map mkd mkdir
+map mkf mkfile
+
+# CD
+#   gh cd ~
+map gc cd ~/.config
+map gl cd ~/.local
+map gd cd ~/Documents
+map gr cd /
+map gp cd /run/media/kris
+
+# Custom functions
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+cmd broot_jump ${{
+  f=$(mktemp)
+  res="$(broot --outcmd $f && cat $f | sed 's/cd //')"
+  rm -f "$f"
+  if [ -f "$res" ]; then
+    cmd="select"
+  elif [ -d "$res" ]; then
+    cmd="cd"
+  fi
+  lf -remote "send $id $cmd \"$res\""
+}}
+
+cmd delete ${{
+	set -f
+	printf "$fx\n"
+    printf "delete?[y/n]"
+    read ans
+    [ "$ans" = "y" ] && rm -rf $fx
+}}
+
+# Image Previews w/ ctpv
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
