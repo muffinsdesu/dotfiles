@@ -17,9 +17,9 @@ bindkey "\e[1;5D" backward-word
 
 ## Custom Aliases ##
 
-alias zsh-hist='geany ~/.local/state/zsh/history'
-alias zsh-env='nano  ~/.config/zsh/.zshenv'
-alias zsh-rc='nano ~/.config/zsh/.zshrc'
+alias zsh-hist='micro ~/.local/state/zsh/history'
+alias zsh-env='micro  ~/.config/zsh/.zshenv'
+alias zsh-rc='micro ~/.config/zsh/.zshrc'
 alias ytdlp="yt-dlp -f 'ba' -x --no-mtime -o '~/Downloads/Songs/%(title)s.%(ext)s' "
 alias glava='glava -d &'
 
