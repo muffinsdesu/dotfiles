@@ -30,6 +30,7 @@ HISTFILE=~/.local/state/zsh/history
 HISTSIZE=1000
 SAVEHIST=500
 bindkey -e
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/kris/.config/zsh/.zshrc'
@@ -40,7 +41,8 @@ compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 # End of lines added by compinstall
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Move .p10k.zsh into ~/.config/zsh first
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
 #zsh plugins
 source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
