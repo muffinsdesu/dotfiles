@@ -4,6 +4,3 @@ polybar &
 
 # wallpaper
 nitrogen &
-
-# change keyboard layout 
-setxkbmap us workman
