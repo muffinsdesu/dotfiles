@@ -1,0 +1,5 @@
+# R/Rstudio things
+R_HOME_USER = ${HOME}/.local/share/renv
+R_PROFILE_USER = ${HOME}/.config/r/.Rprofile
+R_LIBS_USER = ${HOME}/.local/share/renv/x86_64-pc-linux-gnu-library/4.3
+R_HISTFILE = ${HOME}/.local/share/renv/RHIST.Rhistory
