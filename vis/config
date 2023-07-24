@@ -1,0 +1,4 @@
+colors.scheme=old_rainbow
+visualizer.scaling.multiplier=1.0
+visualizer.spectrum.bar.width=1
+visualizer.spectrum.bar.spacing=1
