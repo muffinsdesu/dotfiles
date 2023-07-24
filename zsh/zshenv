@@ -20,4 +20,4 @@ export KDEHOME="$XDG_CONFIG_HOME"/kde
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export GOPATH="$XDG_DATA_HOME"/go
 export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
-export WINEPREFIX="$XDG_DATA_HOME"/wine
+export WINEPREFIX="$XDG_DATA_HOME"/wine-prefixes
