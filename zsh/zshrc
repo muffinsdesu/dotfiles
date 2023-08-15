@@ -16,7 +16,7 @@ alias zshhist='micro ~/.local/state/zsh/history'
 alias zshenv='micro  ~/.config/zsh/.zshenv'
 alias zshrc='micro ~/.config/zsh/.zshrc'
 alias hist-clear='echo "" > ~/.local/state/zsh/history & exec $SHELL -l'
-alias ytdlp="yt-dlp -f 'ba' -x --no-mtime -o '~/Downloads/Songs/%(title)s.%(ext)s' "
+alias ytdlp="yt-dlp --config-locations .config/yt-dlp/yt-dlp.conf "
 alias setkeyboardworkman='setxkbmap us workman'
 alias setkeyboardus='setxkbmap us'
 alias scrcpy='prime-run scrcpy -b 16M -Sw --max-fps=30 -m 2048'
