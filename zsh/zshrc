@@ -44,26 +44,28 @@ compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 # Move .p10k.zsh into ~/.config/zsh first
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
-# Autosuggestions and URL-quote-magic shenanigans
+# Autosuggestions
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
+unsetopt nomatch
+
 # URL-quote-magic shenanigans
-autoload -U url-quote-magic bracketed-paste-magic
-zle -N self-insert url-quote-magic
-zle -N bracketed-paste bracketed-paste-magic
+# autoload -U url-quote-magic bracketed-paste-magic
+# zle -N self-insert url-quote-magic
+# zle -N bracketed-paste bracketed-paste-magic
 
-pasteinit() {
-  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
-  zle -N self-insert url-quote-magic 
-}
-pastefinish() {
-  zle -N self-insert $OLD_SELF_INSERT
-}
-zstyle :bracketed-paste-magic paste-init pasteinit
-zstyle :bracketed-paste-magic paste-finish pastefinish
+# pasteinit() {
+#   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+#   zle -N self-insert url-quote-magic 
+# }
+# pastefinish() {
+#   zle -N self-insert $OLD_SELF_INSERT
+# }
+# zstyle :bracketed-paste-magic paste-init pasteinit
+# zstyle :bracketed-paste-magic paste-finish pastefinish
 
-ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
+# ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste)
 
 # The rest of the plugins
 source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme
