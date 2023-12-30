@@ -1,0 +1,74 @@
+live_config_reload = true
+
+[colors]
+transparent_background_colors = false
+
+[colors.bright]
+black = "#676f78"
+blue = "#3daee9"
+cyan = "#0a94a0"
+green = "#1cdc9a"
+magenta = "#8e44ad"
+red = "#c0392b"
+white = "#ffffff"
+yellow = "#fdbc4b"
+
+[colors.cursor]
+cursor = "#d6d6d6"
+text = "CellBackground"
+
+[colors.normal]
+black = "#313539"
+blue = "#1d99f3"
+cyan = "#13ecec"
+green = "#11d116"
+magenta = "#b76ad8"
+red = "#ed1515"
+white = "#fcfcfc"
+yellow = "#f6ee00"
+
+[colors.primary]
+background = "#232627"
+foreground = "#fcfcfc"
+
+[colors.search.matches]
+background = "CellBackground"
+foreground = "CellForeground"
+
+[cursor.style]
+shape = "Beam"
+
+[env]
+TERM = "alacritty"
+
+[font]
+builtin_box_drawing = true
+size = 10
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Medium"
+
+[font.offset]
+x = -1
+y = -1
+
+[scrolling]
+history = 1000
+multiplier = 1
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[shell]
+program = "/bin/zsh"
+
+[window]
+decorations = "full"
+decorations_theme_variant = "None"
+opacity = 0.8
+title = "Alacritty"
