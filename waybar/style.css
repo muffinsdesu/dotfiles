@@ -1,0 +1,68 @@
+* {
+    font-family: MesloLGS NF;
+    font-weight: bold;
+    font-size: 16px;
+    color:#fcfcfc;
+}
+
+window#waybar{
+	background-color: rgba(100,100,1000,0);
+}
+
+.modules-right {
+	background-color: rgba(49,54,59,0.85);
+	margin: 5px 1px 5px 1px;
+	border-radius:15px;
+	border: 3px solid #FFFFFF;
+}
+
+.modules-center {
+	background-color: rgba(49,54,59,0.85);
+	margin: 5px 1px 6px 1px;
+	border-radius:15px;
+	border: 3px solid #FFFFFF;
+}
+
+#workspaces {
+    margin: 5px 1px 6px 1px;
+    padding: 0px 5px;
+    border-radius: 15px;
+    border: 3px solid #FFFFFF;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    background-color:rgba(59,54,59,0.85);
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 3px 2px;
+    border-radius: 15px;
+    border: 0px;
+    transition: all 0.3s ease-in-out;
+    background:rgba(177,174,204,0.85);
+}
+
+#workspaces button.active {
+    background: rgba(177,174,204,1); /* rgba(49,54,59,0.85)*/
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    /*color:*/
+    background: rgba(49,54,59,1);
+    border-radius: 15px;
+}
+
+
+#clock,
+#network,
+#pulseaudio,
+#tray,
+#custom-power,
+#battery {
+	padding-left: 8px;
+	padding-right: 8px;
+}
