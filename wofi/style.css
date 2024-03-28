@@ -1,0 +1,41 @@
+*{
+	font-family: MesloLGS NF;
+	font-weight: bold;
+}
+#window {
+    margin: 0px;
+    border: 3px solid rgba(177,174,204,1);
+    background-color: rgba(49, 54, 59, 1);
+    border-radius: 18px;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    border-radius: 18px;
+    background-color: rgba(49, 54, 59, 1);
+}
+
+#scroll {
+    margin: 5px;
+    border-radius: 15px;
+    border: none;
+}
+
+#text {
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    color: #fcfcfc;
+}
+
+#entry:selected {
+    border-radius: 10px;
+    background-color: rgba(177,174,204,1);
+}
+
+#entry:selected #text {
+    color: #000000;
+    border-radius: 10px;
+}
