@@ -1,38 +1,38 @@
 window {
-	font-family: MesloLGS NF;
-	font-weight: bold;
-	font-size: 16px;
-	background-color: rgba (0, 0, 0, 0)
+  font-family: MesloLGS NF;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: rgba (0, 0, 0, 0)
 }
 
 /* Outer bar container, takes all the window width/height */
 #outer-box {
-	margin: 0px
+  margin: 0px
 }
 
 /* Inner bar container, surrounds buttons */
 #inner-box {
-	background-color: rgba (49, 54, 59, 0.85);
-	border-radius: 10px;
-	border-style: none;
-	border-width: 1px;
-	border-color: rgba (156, 142, 122, 0.7);
-	padding: 0px;
-	margin: 10px;
+  background-color: rgba (49, 54, 59, 0.85);
+  border-radius: 10px;
+  border-style: none;
+  border-width: 1px;
+  border-color: rgba (156, 142, 122, 0.7);
+  padding: 0px;
+  margin: 10px;
 }
 
 button, image {
-	background: none;
-	border: none;
-	box-shadow: none
+  background: none;
+  border: none;
+  box-shadow: none
 }
 
 button {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: 5px
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px
 }
 
 button:hover {
-	background-color: rgba (255, 255, 255, 0.1)
+  background-color: rgba (255, 255, 255, 0.1)
 }
