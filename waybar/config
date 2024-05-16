@@ -110,5 +110,9 @@
 		"format": "",
 		"on-click": "nwg-bar -p right -s $HOME/.config/nwg-bar/style.css",
 		"on-click-right": ""		
+	},
+
+	"tray":{
+		spacing":10
 	}
 }
